@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>About | Urban Interface</title>
+  <meta name="description" content="Learn about Urban Interface, founded by Matthew Beaudin, Veteran-owned and operated." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html"><span class="brand-title">URBAN INTERFACE</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+      <nav id="mainNav">
+        <a href="index.html">Home</a><a href="about.html">About</a><a href="work.html">Work</a><a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero small-hero hero-bg">
+      <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="assets/video/about-poster.jpg" aria-hidden="true" data-mobile-src="assets/video/about-mobile.mp4">
+        <source src="video/code 1.mp4" type="video/webm" />
+        <source src="assets/video/about-hero.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-scrim"></div>
+      <div class="container hero-content">
+        <p class="kicker">About Urban Interface</p>
+        <h1>Leadership, Service, and Systems Thinking</h1>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container about-grid">
+        <article class="card">
+          <h2>Founder &amp; CEO</h2>
+          <p><strong>Matthew Beaudin</strong></p>
+          <p>Urban Interface is proudly veteran-owned and operated. After 21 years of service in the United States Marine Corps, Matthew Beaudin founded Urban Interface with a commitment to lead every client engagement with integrity, accountability, and purpose. His military career shaped a mission-first mindset rooted in discipline, adaptability, and calm leadership under pressure. Today, that same standard drives Urban Interface’s work, delivering dependable solutions, clear communication, and results clients can trust.</p>
+        </article>
+        <article class="card">
+          <h2>Our Mission</h2>
+          <p>To design and build modern web and application experiences that are technically sound, visually compelling, and strategically aligned to real business goals. We combine strong architecture, thoughtful design, and user-focused functionality to deliver solutions that not only look exceptional, but also drive measurable growth, engagement, and long-term value.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section video-section">
+      <div class="container">
+        <h2>Founder Message</h2>
+        <p class="section-text">A brief introduction to our mission and how we approach every engagement.</p>
+        <div class="video-frame bg-video">
+          <video autoplay muted loop playsinline preload="metadata" poster="assets/video/slot-about-poster.jpg" aria-label="Founder message video">
+            <source src="video/web design1.mp4" type="video/webm" />
+            <source src="assets/video/slot-about.mp4" type="video/mp4" />
+          </video>
+          <div class="video-overlay">
+            <h3>Veteran-led. Mission-focused. Results-driven.</h3>
+            <a class="btn btn-primary" href="contact.html">Connect With Us</a>
+          </div>
+          <button class="video-toggle" type="button" aria-label="Pause background video">Pause</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>© <span id="year"></span> Urban Interface. All rights reserved.</p>
+      <p>Veteran-Owned &amp; Operated.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

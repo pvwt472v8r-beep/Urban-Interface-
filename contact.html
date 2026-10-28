@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Contact | Urban Interface</title>
+  <meta name="description" content="Contact Urban Interface to discuss your web or app project." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html"><span class="brand-title">URBAN INTERFACE</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+      <nav id="mainNav">
+        <a href="index.html">Home</a><a href="about.html">About</a><a href="work.html">Work</a><a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero small-hero hero-bg">
+      <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="assets/video/contact-poster.jpg" aria-hidden="true" data-mobile-src="assets/video/contact-mobile.mp4">
+        <source src="video/contact video.mp4" type="video/webm" />
+        <source src="assets/video/contact-hero.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-scrim"></div>
+      <div class="container hero-content">
+        <p class="kicker">Contact</p>
+        <h1>Let’s Build Something Better.</h1>
+        <p class="lead">Tell us about your project goals and timeline.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+        <form class="card contact-form" action="https://formspree.io/f/mbgdqdol" method="POST">
+  <label for="name">Name</label>
+  <input id="name" name="name" type="text" required />
+
+  <label for="email">Email</label>
+  <input id="email" name="email" type="email" required />
+
+  <label for="type">Project Type</label>
+  <select id="type" name="project_type">
+    <option>Website</option>
+    <option>Web App</option>
+    <option>Mobile App</option>
+    <option>Redesign</option>
+    <option>Not Sure Yet</option>
+  </select>
+
+  <label for="message">Message</label>
+  <textarea id="message" name="message" rows="6" required></textarea>
+
+  <!-- Optional metadata -->
+  <input type="hidden" name="_subject" value="New Urban Interface Contact Form Submission" />
+  <input type="hidden" name="_replyto" value="" />
+  <input type="hidden" name="_captcha" value="false" />
+
+  <button class="btn btn-primary" type="submit">Send Message</button>
+</form>
+
+        <aside class="card">
+  <h2>Direct Contact</h2>
+  <p><strong>Primary:</strong> <a href="mailto:info@urbaninterface.net">info@urbaninterface.net</a></p>
+  <p><strong>Secondary:</strong> <a href="mailto:Mbeaudin14@gmail.com">Mbeaudin14@gmail.com</a></p>
+  <p>Veteran-owned and operated.</p>
+
+  <h3>What Happens Next</h3>
+  <ol>
+    <li>We review your message.</li>
+    <li>We schedule a discovery call.</li>
+    <li>You receive a clear plan and proposal.</li>
+  </ol>
+</aside>
+      </div>
+    </section>
+
+    <section class="section video-section">
+      <div class="container">
+        <h2>What to Expect</h2>
+        <p class="section-text">A quick overview of our process from first call to final launch.</p>
+        <div class="video-frame bg-video">
+          <video autoplay muted loop playsinline preload="metadata" poster="assets/video/slot-contact-poster.jpg" aria-label="Contact process video">
+            <source src="video/web design1.mp4" type="video/webm" />
+            <source src="assets/video/slot-contact.mp4" type="video/mp4" />
+          </video>
+          <div class="video-overlay">
+            <h3>Clear process. Fast communication. Zero guesswork.</h3>
+            <a class="btn btn-primary" href="mailto:hello@urbaninterface.co">Email Us</a>
+          </div>
+          <button class="video-toggle" type="button" aria-label="Pause background video">Pause</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>© <span id="year"></span> Urban Interface. All rights reserved.</p>
+      <p>Systems-Minded Design for Modern Web &amp; App Products.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

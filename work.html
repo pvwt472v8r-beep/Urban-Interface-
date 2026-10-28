@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Our Work | Urban Interface</title>
+  <meta name="description" content="Websites and apps designed and built by Urban Interface. Click a project to visit the live site." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html"><span class="brand-title">URBAN INTERFACE</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+      <nav id="mainNav">
+        <a href="index.html">Home</a><a href="about.html">About</a><a href="work.html">Work</a><a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero small-hero hero-bg">
+      <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="assets/video/work-poster.jpg" aria-hidden="true" data-mobile-src="assets/video/work-mobile.mp4">
+        <source src="video/video_1.mp4" type="video/webm" />
+        <source src="assets/video/work-hero.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-scrim"></div>
+      <div class="container hero-content">
+        <p class="kicker">Our Work</p>
+        <h1>Real Products. Live and In Use.</h1>
+        <p class="lead">Click any screenshot to open the live website or app.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="work-grid">
+          <a class="work-card" href="https://peaklandscapesllc.com" target="_blank" rel="noopener noreferrer">
+            <div class="work-thumb"><img src="image/Peak Landscapes LLC .jpg" alt="Homepage screenshot for Project One" loading="lazy"><span class="work-badge">Visit Site ↗</span></div>
+            <div class="work-info"><h3>Peak Landscapes LLC</h3><p>Website redesign with stronger messaging and conversion flow.</p></div>
+          </a>
+          <a class="work-card" href="https://unitedfrontk9.com" target="_blank" rel="noopener noreferrer">
+            <div class="work-thumb"><img src="image/UFK9 .jpg" alt="Homepage screenshot for Project Two" loading="lazy"><span class="work-badge">Visit Site ↗</span></div>
+            <div class="work-info"><h3>United Front K9</h3><p>Website redesign for optimal user experience and performance.</p></div>
+          </a>
+          <a class="work-card" href="https://mmcbloodstripe.com" target="_blank" rel="noopener noreferrer">
+            <div class="work-thumb"><img src="image/MMC Website.jpg" alt="App screenshot for Project Three" loading="lazy"><span class="work-badge">View Site ↗</span></div>
+            <div class="work-info"><h3>Marines MC</h3><p>Website redesign with improved user functionality and visual design.</p></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section video-section">
+      <div class="container">
+        <h2>Case Study Walkthrough</h2>
+        <p class="section-text">Preview the depth and polish we bring to every build.</p>
+        <div class="video-frame bg-video">
+          <video autoplay muted loop playsinline preload="metadata" poster="assets/video/slot-work-poster.jpg" aria-label="Case study walkthrough video">
+            <source src="assets/video/slot-work.webm" type="video/webm" />
+            <source src="assets/video/slot-work.mp4" type="video/mp4" />
+          </video>
+          <div class="video-overlay">
+            <h3>Design systems that scale with your business.</h3>
+            <a class="btn btn-primary" href="contact.html">Discuss Your Build</a>
+          </div>
+          <button class="video-toggle" type="button" aria-label="Pause background video">Pause</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>© <span id="year"></span> Urban Interface. All rights reserved.</p>
+      <p>Veteran-Owned &amp; Operated.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
