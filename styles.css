@@ -746,16 +746,18 @@ h1 {
   .hero-logo-card {
     transform: none;
   }
-.brand {
+  .site-header .brand {
   display: inline-flex;
   align-items: center;
   gap: 10px;
 }
 
-.brand-logo {
+.site-header .brand-logo {
   display: block;
-  width: auto;
-  height: 40px;
+  width: 40px !important;
+  height: 40px !important;
+  max-width: none;
+  object-fit: contain;
   border-radius: 6px;
 }
 
@@ -765,7 +767,8 @@ h1 {
 }
 
 @media (max-width: 700px) {
-  .brand-logo {
-    height: 32px;
+  .site-header .brand-logo {
+    width: 32px !important;
+    height: 32px !important;
   }
 }
