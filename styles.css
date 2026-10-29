@@ -764,4 +764,26 @@ h1 {
   .hero-logo-card {
     transform: none;
   }
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-logo {
+  display: block;
+  width: auto;
+  height: 40px;
+  border-radius: 6px;
+}
+
+/* Logo moved to the header, so the hero text uses the full width */
+.hero-grid {
+  grid-template-columns: minmax(0, 760px);
+}
+
+@media (max-width: 700px) {
+  .brand-logo {
+    height: 32px;
+  }
 }
