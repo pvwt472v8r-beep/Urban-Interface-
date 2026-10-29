@@ -733,20 +733,8 @@ h1 {
 }
 
 /* Accessibility and performance */
-@media (prefers-reduced-motion: reduce) {
-  .hero-video,
-  .bg-video video {
-    display: none;
-  }
-
-  * {
-    transition: none !important;
-  }
-
-  .hero-logo-card {
-    transform: none;
-  }
-  .site-header .brand {
+/* Logo in header */
+.site-header .brand {
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -766,9 +754,27 @@ h1 {
   grid-template-columns: minmax(0, 760px);
 }
 
+@media (max-width: 900px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 700px) {
   .site-header .brand-logo {
     width: 32px !important;
     height: 32px !important;
+  }
+}
+
+/* Accessibility and performance */
+@media (prefers-reduced-motion: reduce) {
+  .hero-video,
+  .bg-video video {
+    display: none;
+  }
+
+  * {
+    transition: none !important;
   }
 }
