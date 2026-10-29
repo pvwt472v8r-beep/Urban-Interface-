@@ -209,24 +209,6 @@ h1 {
   font-size: 1.08rem;
 }
 
-.hero-logo-card {
-  overflow: hidden;
-  border: 3px solid transparent;
-  border-radius: 16px;
-  background-color: var(--panel);
-  background-image: linear-gradient(var(--panel), var(--panel)), var(--grad);
-  background-origin: border-box;
-  background-clip: padding-box, border-box;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.55), 0 0 44px color-mix(in srgb, var(--g1) 45%, transparent);
-  transform: rotate(1.5deg);
-}
-
-.hero-logo-card img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
 .cta-row {
   display: flex;
   flex-wrap: wrap;
