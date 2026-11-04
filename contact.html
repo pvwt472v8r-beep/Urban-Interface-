@@ -37,15 +37,18 @@
 
     <section class="section">
       <div class="container contact-grid">
-        <form class="card contact-form" action="https://formspree.io/f/mbgdqdol" method="POST">
+        <form class="card contact-form"
+      action="https://formsubmit.co/info@urbaninterface.net"
+      method="POST">
+
   <label for="name">Name</label>
   <input id="name" name="name" type="text" required />
 
   <label for="email">Email</label>
   <input id="email" name="email" type="email" required />
 
-  <label for="email">Phone Number</label>
-  <input id="phone number" name="phone number" type="phone number" required />
+  <label for="phone">Phone Number</label>
+  <input id="phone" name="phone" type="tel" />
 
   <label for="type">Project Type</label>
   <select id="type" name="project_type">
@@ -59,10 +62,8 @@
   <label for="message">Message</label>
   <textarea id="message" name="message" rows="6" required></textarea>
 
-  <!-- Optional metadata -->
   <input type="hidden" name="_subject" value="New Urban Interface Contact Form Submission" />
-  <input type="hidden" name="_replyto" value="" />
-  <input type="hidden" name="_captcha" value="false" />
+  <input type="hidden" name="_cc" value="Mbeaudin14@gmail.com" />
 
   <button class="btn btn-primary" type="submit">Send Message</button>
 </form>
