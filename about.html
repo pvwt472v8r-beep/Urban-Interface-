@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
  <title>About Urban Interface | Our Mission and Approach</title>
 <meta name="description" content="Meet Urban Interface and learn about our mission, leadership, and approach to building modern web and application experiences.">
-  <link rel="canonical" href="https://urbaninterface.it.com/about">
+  <link rel="canonical" href="https://urbaninterface.it.com/about.html">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -15,8 +15,8 @@
   <img class="brand-logo" src="image/logo2.jpg" alt="Urban Interface logo" />
   <span class="brand-title">URBAN INTERFACE</span>
 </a>
-      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
-      <nav id="mainNav">
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="mainNav">☰</button>
+      <nav id="mainNav" aria-label="Main navigation">
         <a href="index.html">Home</a><a href="about.html">About</a><a href="work.html">Work</a><a href="contact.html">Contact</a>
       </nav>
     </div>
@@ -24,9 +24,8 @@
 
   <main>
     <section class="hero small-hero hero-bg">
-      <video class="hero-video" autoplay muted loop playsinline webkit-playsinline preload="metadata" poster="assets/video/about-poster.jpg" aria-hidden="true" data-mobile-src="video/Code 1.mp4">
-        <source src="assets/video/hero-bg.mp4" type="video/mp4" />
-        <source src="video/Code 1.mp4" type="video/mp4" />
+      <video class="hero-video" autoplay muted loop playsinline webkit-playsinline preload="metadata" aria-hidden="true" data-mobile-src="video/Code 1.mp4">
+        <source src="video/Code 1.mp4" type="video/mp4">
       </video>
       <div class="hero-scrim"></div>
       <div class="container hero-content">
@@ -40,21 +39,21 @@
         <article class="card">
           <h2>Founder &amp; CEO</h2>
           <p><strong>Matthew Beaudin</strong></p>
-          <p>Urban Interface is proudly veteran-owned and operated. After 21 years of service in the United States Marine Corps, Matthew Beaudin founded Urban Interface with a commitment to lead every client engagement with integrity, accountability, and purpose. His military career shaped a mission-first mindset rooted in discipline, adaptability, and calm leadership under pressure. Today, that same standard drives Urban Interface’s work, delivering dependable solutions, clear communication, and results clients can trust.</p>
+          <p>Urban Interface is proudly veteran-owned and operated. After 21 years of service in the United States Marine Corps, Matthew Beaudin founded Urban Interface with a commitment to lead every client engagement with integrity, accountability, and purpose. His military career shaped a mindset rooted in discipline, adaptability, and calm leadership under pressure. Today, those values guide Urban Interface’s work: dependable solutions, clear communication, and a thoughtful process from the first conversation through delivery.</p>
         </article>
         <article class="card">
           <h2>Our Mission</h2>
-          <p>To design and build modern web and application experiences that are technically sound, visually compelling, and strategically aligned to real business goals. We combine strong architecture, thoughtful design, and user-focused functionality to deliver solutions that not only look exceptional, but also drive measurable growth, engagement, and long-term value.</p>
+          <p>To design and build modern websites and application experiences that are technically sound, visually thoughtful, and aligned with real business goals. We bring together clear communication, considered design, and useful functionality to create digital experiences that serve both the organization and the people it supports.</p>
         </article>
       </div>
     </section>
 
 <section class="section video-section">
       <div class="container">
-        <h2>Walkthrough Of Our Design Process</h2>
-        <p> Come on a journey with us as we show you how we turn your ideas into real modern functional designs</p>
+        <h2>Our design process</h2>
+        <p>See how we listen, plan, and turn your ideas into a clear digital experience.</p>
         <div class="video-frame bg-video">
-          <video playsinline preload="metadata" poster="assets/video/slot-work-poster.jpg" aria-label="Walkthrough video">
+          <video playsinline preload="metadata" aria-label="Walkthrough video">
             <source src="video/About.mp4" type="video/mp4" />
           </video>
           <div class="video-overlay">
@@ -64,7 +63,6 @@
       </div>
     </section>
   </main>
-  </main>
 
   <footer class="site-footer">
     <div class="container footer-row">
@@ -72,7 +70,7 @@
       <p>Veteran-Owned &amp; Operated.</p>
     </div>
   </footer>
-  <a class="call-bar" href="tel:+18082863552">Call Now</a>
+  <a class="call-bar" href="contact.html#contact-form">Request a Consultation</a>
   <script src="script.js"></script>
 </body>
 </html>

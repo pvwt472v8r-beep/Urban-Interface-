@@ -1,7 +1,30 @@
 const menuBtn = document.getElementById("menuBtn");
 const mainNav = document.getElementById("mainNav");
 if (menuBtn && mainNav) {
-  menuBtn.addEventListener("click", () => mainNav.classList.toggle("open"));
+  const setMenuOpen = (open) => {
+    mainNav.classList.toggle("open", open);
+    menuBtn.setAttribute("aria-expanded", String(open));
+    menuBtn.setAttribute("aria-label", open ? "Close navigation" : "Open navigation");
+  };
+
+  menuBtn.addEventListener("click", () => {
+    setMenuOpen(menuBtn.getAttribute("aria-expanded") !== "true");
+  });
+
+  mainNav.addEventListener("click", (event) => {
+    if (event.target.closest("a")) setMenuOpen(false);
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && mainNav.classList.contains("open")) {
+      setMenuOpen(false);
+      menuBtn.focus();
+    }
+  });
+
+  window.matchMedia("(min-width: 701px)").addEventListener("change", (event) => {
+    if (event.matches) setMenuOpen(false);
+  });
 }
 
 const yearEl = document.getElementById("year");
