@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <title>Contact Urban Interface | Let's Start a Conversation</title>
 <meta name="description" content="Contact Urban Interface to discuss your website or application project and the goals you want it to achieve.">
-  <link rel="canonical" href="https://urbaninterface.it.com/contact">
+  <link rel="canonical" href="https://urbaninterface.it.com/contact.html">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -15,8 +15,8 @@
   <img class="brand-logo" src="image/logo2.jpg" alt="Urban Interface logo" />
   <span class="brand-title">URBAN INTERFACE</span>
 </a>
-      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
-      <nav id="mainNav">
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="mainNav">☰</button>
+      <nav id="mainNav" aria-label="Main navigation">
         <a href="index.html">Home</a><a href="about.html">About</a><a href="work.html">Work</a><a href="contact.html">Contact</a>
       </nav>
     </div>
@@ -24,21 +24,20 @@
 
   <main>
     <section class="hero small-hero hero-bg">
-      <video class="hero-video" autoplay muted loop playsinline webkit-playsinline preload="metadata" poster="assets/video/contact-poster.jpg" aria-hidden="true" data-mobile-src="video/contact video.mp4">
-        <source src="assets/video/hero-bg.mp4" type="video/mp4" />
-        <source src="video/contact video.mp4" type="video/mp4" />
+      <video class="hero-video" autoplay muted loop playsinline webkit-playsinline preload="metadata" aria-hidden="true" data-mobile-src="video/contact video.mp4">
+        <source src="video/contact video.mp4" type="video/mp4">
       </video>
       <div class="hero-scrim"></div>
       <div class="container hero-content">
         <p class="kicker">Contact</p>
-        <h1>Let’s Build Something Better.</h1>
-        <p class="lead">Tell us about your project goals and timeline.</p>
+        <h1>Start with a conversation.</h1>
+        <p class="lead">Tell us what you’re working toward. We’ll review your message and discuss a practical next step.</p>
       </div>
     </section>
 
     <section class="section">
       <div class="container contact-grid">
-        <form class="card contact-form"
+        <form class="card contact-form" id="contact-form"
       action="https://formspree.io/f/xeaanzro"
       method="POST">
 
@@ -89,7 +88,7 @@
         <h2>What to Expect</h2>
         <p class="section-text">Our Designs Start with a Conversation.</p>
         <div class="video-frame bg-video">
-          <video playsinline preload="metadata" poster="assets/video/slot-contact-poster.jpg" aria-label="Contact process video">
+          <video playsinline preload="metadata" aria-label="Contact process video">
             <source src="video/The Unknown Website.mp4" type="video/mp4" />
           </video>
           <div class="video-overlay">
@@ -104,10 +103,10 @@
   <footer class="site-footer">
     <div class="container footer-row">
       <p>© <span id="year"></span> Urban Interface. All rights reserved.</p>
-      <p>Systems-Minded Design for Modern Web &amp; App Products.</p>
+      <p>Start with a conversation.</p>
     </div>
   </footer>
-  <a class="call-bar" href="tel:+18082863552">Call Now</a>
+  <a class="call-bar" href="contact.html#contact-form">Request a Consultation</a>
   <script src="script.js"></script>
 </body>
 </html>

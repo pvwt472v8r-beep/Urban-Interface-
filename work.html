@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <title>Our Work | Urban Interface</title>
-<meta name="description" content="Explore Urban Interface projects and see how we approach web design, development, and application experiences.">
-<link rel="canonical" href="https://urbaninterface.it.com/work">
+  <meta name="description" content="Explore selected Urban Interface website projects, including redesigns, responsive experiences, and work currently in progress.">
+  <link rel="canonical" href="https://urbaninterface.it.com/work.html">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -15,8 +15,8 @@
   <img class="brand-logo" src="image/logo2.jpg" alt="Urban Interface logo" />
   <span class="brand-title">URBAN INTERFACE</span>
 </a>
-      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
-      <nav id="mainNav">
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="mainNav">☰</button>
+      <nav id="mainNav" aria-label="Main navigation">
         <a href="index.html">Home</a><a href="about.html">About</a><a href="work.html">Work</a><a href="contact.html">Contact</a>
       </nav>
     </div>
@@ -24,37 +24,50 @@
 
   <main>
     <section class="hero small-hero hero-bg">
-      <video class="hero-video" autoplay muted loop playsinline webkit-playsinline preload="metadata" poster="assets/video/work-poster.jpg" aria-hidden="true" data-mobile-src="video/video_1.mp4">
-        <source src="video/video_1.mp4" type="video/mp4" />
-        <source src="assets/video/work-hero.mp4" type="video/mp4" />
+      <video class="hero-video" autoplay muted loop playsinline webkit-playsinline preload="metadata" aria-hidden="true" data-mobile-src="video/video_1.mp4">
+        <source src="video/video_1.mp4" type="video/mp4">
       </video>
       <div class="hero-scrim"></div>
       <div class="container hero-content">
         <p class="kicker">Our Work</p>
-        <h1>Real Products. Live and In Use.</h1>
-        <p class="lead">Click any screenshot to open the live website or app.</p>
+        <h1>Work shaped around real businesses.</h1>
+        <p class="lead">A selection of live websites and projects in progress. Explore a finished project, or start a conversation about yours.</p>
       </div>
     </section>
 
     <section class="section">
       <div class="container">
+        <h2 class="work-section-title">Selected projects</h2>
         <div class="work-grid">
           <a class="work-card" href="https://peaklandscapesllc.com" target="_blank" rel="noopener noreferrer">
-            <div class="work-thumb"><img src="image/Peak Landscapes LLC .jpg" alt="Homepage screenshot for Project One" loading="lazy"><span class="work-badge">Visit Site ↗</span></div>
-            <div class="work-info"><h3>Peak Landscapes LLC</h3><p>Website redesign with stronger messaging and conversion flow.</p></div>
+            <div class="work-thumb"><img src="image/Peak Landscapes LLC .jpg" alt="Peak Landscapes website homepage" loading="lazy"><span class="work-badge">Visit live site ↗</span></div>
+            <div class="work-info"><h3>Peak Landscapes LLC</h3><p><strong>Focus</strong> Clearer service messaging and a more direct visitor journey.</p><p><strong>Work</strong> Website redesign with refreshed content structure and conversion flow.</p></div>
           </a>
           <a class="work-card" href="https://ufk9.com" target="_blank" rel="noopener noreferrer">
-            <div class="work-thumb"><img src="image/UFK9 .jpg" alt="Homepage screenshot for Project Two" loading="lazy"><span class="work-badge">Visit Site ↗</span></div>
-            <div class="work-info"><h3>United Front K9</h3><p>Website redesign for optimal user experience and performance.</p></div>
+            <div class="work-thumb"><img src="image/UFK9 .jpg" alt="United Front K9 website homepage" loading="lazy"><span class="work-badge">Visit live site ↗</span></div>
+            <div class="work-info"><h3>United Front K9</h3><p><strong>Focus</strong> Present the organization clearly and improve the mobile experience.</p><p><strong>Work</strong> Website redesign with responsive layouts and mobile video updates.</p></div>
           </a>
           <a class="work-card" href="https://mmcbloodstripe.com" target="_blank" rel="noopener noreferrer">
-            <div class="work-thumb"><img src="image/MMC Website.jpg" alt="App screenshot for Project Three" loading="lazy"><span class="work-badge">View Site ↗</span></div>
-            <div class="work-info"><h3>Marines MC</h3><p>Website redesign with improved user interface and optimized navigation design.</p></div>
+            <div class="work-thumb"><img src="image/MMC Website.jpg" alt="Marines MC website homepage" loading="lazy"><span class="work-badge">Visit live site ↗</span></div>
+            <div class="work-info"><h3>Marines MC</h3><p><strong>Focus</strong> Make site information easier to navigate and explore.</p><p><strong>Work</strong> Website redesign with a refreshed interface and navigation.</p></div>
           </a>
-           <a class="work-card" href="https://pvwt472v8r-beep.github.io/Barn-Door-Bakehouse/" target="_blank" rel="noopener noreferrer">
-            <div class="work-thumb"><img src="image/Barn Door Bakehouse.jpg" alt="App screenshot for Project Three" loading="lazy"><span class="work-badge">Still In Progress↗</span></div>
-            <div class="work-info"><h3>Barn Door Bakehouse</h3><p>Website with enhanced user funtionality and streamlined visual designs.</p></div>
-          </a>
+        </div>
+
+        <section class="work-progress" aria-labelledby="progress-heading">
+          <h2 class="work-section-title" id="progress-heading">In progress</h2>
+          <p class="section-text">This project is under development. The preview may change as work continues.</p>
+          <div class="work-grid">
+            <a class="work-card" href="https://pvwt472v8r-beep.github.io/Barn-Door-Bakehouse/" target="_blank" rel="noopener noreferrer">
+              <div class="work-thumb"><img src="image/Barn Door Bakehouse.jpg" alt="Barn Door Bakehouse website preview" loading="lazy"><span class="work-badge">Preview in progress ↗</span></div>
+              <div class="work-info"><h3>Barn Door Bakehouse</h3><p><strong>Focus</strong> Build a welcoming bakery website with useful customer features.</p><p><strong>Work</strong> Website design and functionality are in progress.</p></div>
+            </a>
+          </div>
+        </section>
+
+        <div class="work-cta">
+          <h2>Have a project in mind?</h2>
+          <p>Start with a conversation. We’ll learn about your goals and help you explore the right next step.</p>
+          <a class="btn btn-primary" href="contact.html#contact-form">Request a consultation</a>
         </div>
       </div>
     </section>
@@ -63,10 +76,10 @@
   <footer class="site-footer">
     <div class="container footer-row">
       <p>© <span id="year"></span> Urban Interface. All rights reserved.</p>
-      <p>Veteran-Owned &amp; Operated.</p>
+      <p>Start with a conversation.</p>
     </div>
   </footer>
-  <a class="call-bar" href="tel:+18082863552">Call Now</a>
+  <a class="call-bar" href="contact.html#contact-form">Request a Consultation</a>
   <script src="script.js"></script>
 </body>
 </html>
