@@ -120,6 +120,7 @@
 .design-faq summary { padding: 14px 0; cursor: pointer; font-weight: 700; }
 .design-faq p { margin: 0 0 16px; }
 .design-page .work-cta { margin-top: 0; }
+.case-study-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 
 @media (max-width: 900px) {
   .design-hero-grid,
@@ -128,5 +129,6 @@
 }
 
 @media (max-width: 700px) {
-  .design-grid { grid-template-columns: minmax(0, 1fr); }
+  .design-grid,
+  .case-study-grid { grid-template-columns: minmax(0, 1fr); }
 }

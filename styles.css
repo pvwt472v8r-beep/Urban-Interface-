@@ -491,12 +491,6 @@ h1 {
   text-underline-offset: 0.2em;
 }
 
-.card .web-design-link {
-  display: inline-flex;
-  align-items: center;
-  min-height: 44px;
-}
-
 .work-cta h2 {
   margin-bottom: 12px;
 }
