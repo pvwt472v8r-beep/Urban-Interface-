@@ -9,6 +9,24 @@
   background: radial-gradient(ellipse at 85% 20%, #153b76, transparent 66%);
 }
 
+.design-video-hero {
+  position: relative;
+  isolation: isolate;
+}
+
+.design-video-hero .hero-video,
+.design-video-hero .hero-scrim {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .design-video-hero .hero-video.is-playing,
+  .design-video-hero .hero-video.is-playing + .hero-scrim {
+    opacity: 1;
+  }
+}
+
 .design-hero-grid,
 .design-questions {
   display: grid;
