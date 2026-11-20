@@ -486,6 +486,17 @@ h1 {
   border-radius: 14px;
 }
 
+.web-design-link {
+  color: #9de6ff;
+  text-underline-offset: 0.2em;
+}
+
+.card .web-design-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+
 .work-cta h2 {
   margin-bottom: 12px;
 }
@@ -525,6 +536,12 @@ h1 {
   height: 100%;
   object-fit: cover;
   object-position: top;
+}
+
+.work-thumb-logo img {
+  padding: 18px;
+  object-fit: contain;
+  object-position: center;
 }
 
 .work-badge {

@@ -32,6 +32,9 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
 
 /* Hero background video: mobile source + data saver handling */
 document.querySelectorAll(".hero-video").forEach((video) => {
+  const deferredSource = video.dataset.src?.trim();
+  if (deferredSource === "") return;
+
   const saveData = navigator.connection && navigator.connection.saveData;
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   if (saveData || reduceMotion) {
@@ -42,12 +45,23 @@ document.querySelectorAll(".hero-video").forEach((video) => {
 
   const mobile = window.matchMedia("(max-width:700px)").matches;
   const mobileSrc = video.dataset.mobileSrc;
-  if (mobile && mobileSrc) {
+  if (deferredSource) {
+    video.addEventListener("playing", () => video.classList.add("is-playing"));
+    video.addEventListener("error", () => {
+      video.classList.remove("is-playing");
+      console.warn("Could not load the hero background video.", video.error);
+    });
+    video.src = (mobile && mobileSrc) || deferredSource;
+  } else if (mobile && mobileSrc) {
     video.innerHTML = "";
     video.src = mobileSrc;
     video.load();
   }
-  video.play().catch(() => {});
+  video.play().catch((error) => {
+    if (deferredSource && error.name !== "NotAllowedError") {
+      console.warn("Could not play the hero background video.", error);
+    }
+  });
 });
 
 /* Message-slot video pause/play buttons */
