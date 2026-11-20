@@ -74,6 +74,9 @@
 .design-browser p { margin: 5px 0 12px; color: var(--muted); }
 .design-browser a { color: #9de6ff; text-underline-offset: .2em; }
 
+.design-project-mark { text-align: center; }
+.design-project-mark img { width: min(60%, 260px); margin: 28px auto 0; }
+
 .design-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));

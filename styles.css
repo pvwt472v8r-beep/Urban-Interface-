@@ -538,6 +538,12 @@ h1 {
   object-position: top;
 }
 
+.work-thumb-logo img {
+  padding: 18px;
+  object-fit: contain;
+  object-position: center;
+}
+
 .work-badge {
   position: absolute;
   right: 10px;
