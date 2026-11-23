@@ -14,6 +14,25 @@
   isolation: isolate;
 }
 
+.web-design-hero {
+  background: none;
+}
+
+.web-design-hero::before {
+  content: "";
+  position: absolute;
+  z-index: -3;
+  inset: 0;
+  background: radial-gradient(ellipse at 85% 20%, #153b76, transparent 66%);
+}
+
+.web-design-hero::before,
+.web-design-hero .hero-video,
+.web-design-hero .hero-scrim {
+  -webkit-mask-image: linear-gradient(to bottom, #000 65%, transparent 100%);
+  mask-image: linear-gradient(to bottom, #000 65%, transparent 100%);
+}
+
 .design-video-hero .hero-video,
 .design-video-hero .hero-scrim {
   opacity: 0;
